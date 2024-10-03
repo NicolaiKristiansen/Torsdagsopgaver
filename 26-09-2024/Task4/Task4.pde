@@ -13,13 +13,9 @@ void setup(){
   //Display one square from square array
   square[0].display(square[0].xpos,square[0].ypos);
   
-  for(int i = 0; i < square.length; i++){
-    //square[i].display(square[i].xpos,square[i].ypos);
-  }
-  
   //Generate 10 random positions for squares array
   for(int i = 0; i < squares.length; i++){
     squares[i] = new Square(int(random(width)), int(random(height)));
-    
+    squares[i].display(squares[i].xpos, squares[i].ypos);
   }
 }

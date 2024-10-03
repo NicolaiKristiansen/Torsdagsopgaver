@@ -6,21 +6,21 @@ void setup(){
   for(int i = 0; i < chessboard.length; i++){
     for(int j = 0; j < chessboard.length; j++){
       if(i%2 == 0){
-        //println("Lige rækker");
+        //Lige rækker
         if(j % 2 == 0){
-          //println("De sorte felter i den lige rækkke");
+          //De sorte felter i den lige rækkke
           chessboard[i][j] = 0;
         } else{
-        //println("De sorte felter i den lige række");
+        //De sorte felter i den lige række
       chessboard[i][j] = 1;
     }
       } else{
-        //println("De ullige rækker");
+        //De ullige rækker
         if(j%2 != 0){
-          //println("De hvide felter i den ulige række");
+          //De hvide felter i den ulige række
           chessboard[i][j] = 0;
         } else{
-          //println("De sorte felter i den ulige række");
+          //De sorte felter i den ulige række
           chessboard[i][j] = 1;
         }
       }
