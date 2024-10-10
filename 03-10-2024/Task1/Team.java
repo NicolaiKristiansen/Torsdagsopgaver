@@ -2,7 +2,6 @@ import java.util.ArrayList;
 class Team{
 	private String teamName;
 	private int rank;
-	private String s;
 	private ArrayList<String> players = new ArrayList<String>();
 
 	Team(String teamName, int rank){
@@ -19,8 +18,15 @@ class Team{
 	}
 
 	public String toString(){
-		s = ("Team: " + this.teamName + " | Rank: " 
-			+ this.rank + " | Name: " + players);
+		String s = ("Team: " + this.teamName + " | Rank: " 
+			+ this.rank + "\nNames:\n");
+			int k = 1;
+			for(String i: players){
+				String playerName = i;
+				s += k + ": " + playerName;
+				s += "\n";
+				k++;
+		}
 
 
 	return s;
